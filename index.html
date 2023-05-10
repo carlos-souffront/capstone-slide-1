@@ -23,7 +23,19 @@
     <a-plane></a-plane>
   </a-entity>
   
-  <a-entity position="0 0 -180">
+  <!--this section is meant to be a halfway-point check-in with a sliding bar graph, 
+but i'm not sure how to apply the keyframe within the a-scene-->
+  <a-entity position="0 0 -180" camera-position="0 1.6 0" fov="20">
+    <a-sky color="fff8dc"></a-sky>
+    <a-plane></a-plane>
+  </a-entity>
+  
+  <a-entity position="0 0 -225" camera-position="0 1.6 0" fov="20">
+    <a-sky src="regueton-background.mp4" autoplayloopmaterial="shader:flat;"></a-sky>
+    <a-plane></a-plane>
+  </a-entity>
+  
+  <a-entity position="0 0 -270" camera-position="0 1.6 0" fov="20">
     <a-sky></a-sky>
     <a-plane></a-plane>
   </a-entity>
