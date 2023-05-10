@@ -4,59 +4,26 @@
   <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 </head>
 
-<style>
-  @keyframes gradient-pulse {
-    0%{
-      background-image: linear-gradient(down, #ff6666, #ffb380);
-    }
-    50%{
-      background-image: linear-gradient(down, #ffb380, #ff6666);
-    }
-    100%{
-      background-image: linear-gradient(down, #ff6666, #ffb380);
-    }
-  }
-  
-    @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-
-    50% {
-      transform: translateY(10%);
-    }
-
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  body{
-    background-image: linear-gradient(#ff6666, #ffb380);
-    animation-name: gradient-pulse;
-    animation duration: 6s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-  
-  
-</style>
-
 
 <a-scene>
-  <a-entity scale=".6 .6 .5">
+  <a-entity position="0 0 -45">
       <a-plane color="#ff6666" width="2" height="960" rotation="-90 0 0" position="0 0 -5" movement-controls="speed: 0.001"></a-plane>
     <a-sky src="salsa-background.mp4" autoplayloopmaterial="shader:flat;">
        <a-animation attribute="rotation" dur="5000" to="0 360 0" easing="linear" repeat="indefinite"></a-animation>
     </a-sky>
   </a-entity>
   
-  <a-entity scale=".6 .6 -1">
+  <a-entity position="0 0 -90">
     <a-sky src="pop-background.mp4" autoplayloopmaterial="shader:flat;"></a-sky>
     <a-plane color="ff1493" width="2" height="960" rotation="-90 0 0" position="0 0 -960.1" movement-controls="speed: 0.001"></a-plane>
   </a-entity>
   
-  <a-entity scale=".6 .6 -3">
+  <a-entity position="0 0 -135">
+    <a-sky src="rb-background.mp4" autoplayloopmaterial="shader:flat;"></a-sky>
+    <a-plane></a-plane>
+  </a-entity>
+  
+  <a-entity position="0 0 -180">
     <a-sky></a-sky>
     <a-plane></a-plane>
   </a-entity>
