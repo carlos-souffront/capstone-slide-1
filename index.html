@@ -6,7 +6,7 @@
 
 
 <a-scene>
-  <!--salsa segment-->
+   <!--salsa segment-->
   <a-entity position="0 0 -45" camera-position="0 1.6 0" fov="20">
       <a-plane color="#ff6666" width="2" height="960" rotation="-90 0 0" position="0 0 -5" movement-controls="speed: 0.001"></a-plane>
     <a-sky src="salsa-background.mp4" autoplayloopmaterial="shader:flat;">
@@ -16,7 +16,8 @@
   
   <!--hyperpop segment-->
   <a-entity position="0 0 -90" camera-position="0 1.6 0" fov="20">
-    <a-sky src="pop-background.mp4" autoplayloopmaterial="shader:flat;"></a-sky>
+    <a-sky src="pop-background.mp4" autoplayloopmaterial="shader:flat;">
+    </a-sky>
     <a-plane color="ff1493" width="2" height="960" rotation="-90 0 0" position="0 0 -960.1" movement-controls="speed: 0.001"></a-plane>
   </a-entity>
   
@@ -26,7 +27,8 @@
     <a-plane></a-plane>
   </a-entity>
   
-  <!--this section is meant to be a halfway-point check-in with a sliding bar graph, 
+  <!--this section is meant to be a halfway-point check-in with 
+a sliding bar graph, 
 but i'm not sure how to apply the keyframe within the a-scene-->
   <a-entity position="0 0 -180" camera-position="0 1.6 0" fov="20">
     <a-sky color="fff8dc"></a-sky>
@@ -50,9 +52,9 @@ but i'm not sure how to apply the keyframe within the a-scene-->
     <a-sky src="alt-rock-background.mp4" autoplayloopmaterial="shader:flat;"></a-sky>
     <a-plane></a-plane>
   </a-entity>
-  
-  
 </a-scene>
+
+
 
 
 
